@@ -7,6 +7,7 @@ import { ListaRecetasComponent } from './lista-recetas/lista-recetas.component';
 import { DetallesRecetaComponent } from './detalles-receta/detalles-receta.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DetallesComponent } from './detalles/detalles.component';
+import { DsRecetasService } from './ds-recetas.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { DetallesComponent } from './detalles/detalles.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DsRecetasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

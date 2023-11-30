@@ -9,7 +9,7 @@ import { CReceta } from '../Crecetas';
   styleUrls: ['./lista-recetas.component.css']
 })
 export class ListaRecetasComponent {
-      rec: CReceta[]=[];
+      rec: CReceta[]= [];
       constructor(private router: Router, private recetasservicio: DsRecetasService){
         this.rec=this.recetasservicio.DRecetas;
       }

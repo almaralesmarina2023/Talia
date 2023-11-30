@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CReceta } from '../Crecetas';
 @Component({
   selector: 'app-receta',
@@ -6,5 +6,7 @@ import { CReceta } from '../Crecetas';
   styleUrls: ['./receta.component.css']
 })
 export class RecetaComponent {
+
+  @Input() receta_una : CReceta =  new CReceta("", [], "", "")
 
 }
