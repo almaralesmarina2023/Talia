@@ -8,7 +8,8 @@ import { DetallesComponent } from './detalles/detalles.component';
 
 const appRoutes: Routes = [
     {path: 'lr', component:ListaRecetasComponent},
-    {path: 'pf', component:DetallesComponent}
+    {path: 'pf', component:DetallesComponent},
+    {path: 'detalles/:id', component:DetallesRecetaComponent}
 
     //{path: '**', component:ErrorComponent}
 ];

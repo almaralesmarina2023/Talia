@@ -1,13 +1,15 @@
-<!-- <app-receta *ngFor='let r of rec' [receta_una]="rec"></app-receta> -->
-<div *ngFor='let r of rec'>
+<app-receta *ngFor='let r of rec, let indice = index' [indice]="indice" [receta_una]="r"></app-receta>  
+
+<!-- <div *ngFor='let r of rec'>
 <div class="card text-black bg-light mb-3" style="width: 18rem;">
     <img class="card-img-top" src={{r.rutaimagen}} alt={{r.nombre}}>
     <div class="card-body">
-      <h5 class="card-title">{{r.nombre}}</h5>
-      <a href="#" class="btn btn-primary">Leer más...</a>
+        <a [routerLink]="['/detalles', indice]">
+            <h5 class="card-title">{{r.nombre}}</h5>
+        </a>
     </div>
   </div>
-</div>
+</div> -->
 
 <div style="text-align: center;">
     <button class="btn btn-primary" (click)="volverHome()">Inicio</button>
