@@ -41,4 +41,8 @@ export class DsRecetasService {
 
 
   constructor() { }
+
+  encontrarReceta(index:number){
+    return this.DRecetas[index];
+  }
 }
